@@ -2,11 +2,21 @@
   "name": "jas",
   "rules": {
     "source_file": {
-      "type": "REPEAT",
-      "content": {
-        "type": "SYMBOL",
-        "name": "constants"
-      }
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "constants"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        }
+      ]
     },
     "constants": {
       "type": "SEQ",
@@ -51,8 +61,24 @@
         {
           "type": "SYMBOL",
           "name": "dec_number"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_number"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "oct_number"
         }
       ]
+    },
+    "hex_number": {
+      "type": "PATTERN",
+      "value": "0x\\d+"
+    },
+    "oct_number": {
+      "type": "PATTERN",
+      "value": "0\\d+"
     },
     "dec_number": {
       "type": "PATTERN",

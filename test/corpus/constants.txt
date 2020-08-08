@@ -1,0 +1,94 @@
+================
+One constant
+================
+
+.constant
+one 1
+.end-constant
+
+---
+(source_file
+    (constants
+        (constant_expression
+            (identifier)
+            (dec_number))))
+
+
+================
+Two constants
+================
+
+.constant
+one 1
+two 2
+.end-constant
+
+---
+(source_file
+    (constants
+        (constant_expression
+            (identifier)
+            (dec_number))
+        (constant_expression
+            (identifier)
+            (dec_number))))
+
+            
+================
+Multiple constants
+================
+
+.constant
+one 1
+two 2
+three 3
+four 4
+.end-constant
+
+---
+(source_file
+    (constants
+        (constant_expression
+            (identifier)
+            (dec_number))
+        (constant_expression
+            (identifier)
+            (dec_number))
+        (constant_expression
+            (identifier)
+            (dec_number))
+        (constant_expression
+            (identifier)
+            (dec_number))))
+
+            
+================
+Hex constant 
+================
+
+.constant
+one 0x01
+.end-constant
+
+---
+(source_file
+    (constants
+        (constant_expression
+            (identifier)
+            (hex_number))))
+
+
+================
+Oct constant 
+================
+
+.constant
+one 01
+.end-constant
+
+---
+(source_file
+    (constants
+        (constant_expression
+            (identifier)
+            (oct_number))))

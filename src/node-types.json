@@ -12,7 +12,15 @@
           "named": true
         },
         {
+          "type": "hex_number",
+          "named": true
+        },
+        {
           "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "oct_number",
           "named": true
         }
       ]
@@ -38,7 +46,7 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "types": [
         {
@@ -61,7 +69,15 @@
     "named": true
   },
   {
+    "type": "hex_number",
+    "named": true
+  },
+  {
     "type": "identifier",
+    "named": true
+  },
+  {
+    "type": "oct_number",
     "named": true
   }
 ]

@@ -2,7 +2,9 @@ module.exports = grammar({
   name: "jas",
 
   rules: {
-    source_file: $ => repeat($.constants),
+    source_file: $ => seq(
+      optional($.constants)
+    ),
 
     constants: $ => seq(
       '.constant',
@@ -17,9 +19,13 @@ module.exports = grammar({
     identifier: $ => /[a-z]+/,
 
     _number: $ => choice(
-      $.dec_number
+      $.dec_number,
+      $.hex_number,
+      $.oct_number,
     ),
 
-    dec_number: $ => /\d+/
+    hex_number: $ => /0x\d+/,
+    oct_number: $ => /0\d+/,
+    dec_number: $ => /\d+/,
   },
 });
