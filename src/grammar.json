@@ -15,6 +15,43 @@
               "type": "BLANK"
             }
           ]
+        },
+        {
+          "type": "SYMBOL",
+          "name": "main_program"
+        }
+      ]
+    },
+    "main_program": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": ".main"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_statement"
+        },
+        {
+          "type": "STRING",
+          "value": ".end-main"
+        }
+      ]
+    },
+    "_statement": {
+      "type": "REPEAT1",
+      "content": {
+        "type": "SYMBOL",
+        "name": "single_statement"
+      }
+    },
+    "single_statement": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "DUP"
         }
       ]
     },

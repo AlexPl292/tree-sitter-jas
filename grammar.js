@@ -3,7 +3,22 @@ module.exports = grammar({
 
   rules: {
     source_file: $ => seq(
-      optional($.constants)
+      optional($.constants),
+      $.main_program
+    ),
+
+    main_program: $ => seq(
+      '.main',
+      $._statement,
+      '.end-main'
+    ),
+
+    _statement: $ => repeat1(
+      $.single_statement
+    ),
+
+    single_statement: $ => choice(
+      'DUP'
     ),
 
     constants: $ => seq(

@@ -1,0 +1,14 @@
+================
+Main program
+================
+
+.main
+DUP
+.end-main
+
+---
+(source_file
+    (constants
+        (constant_expression
+            (identifier)
+            (dec_number))))

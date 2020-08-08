@@ -42,15 +42,39 @@
     }
   },
   {
+    "type": "main_program",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "single_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "single_statement",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "source_file",
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
-      "required": false,
+      "multiple": true,
+      "required": true,
       "types": [
         {
           "type": "constants",
+          "named": true
+        },
+        {
+          "type": "main_program",
           "named": true
         }
       ]
@@ -62,6 +86,18 @@
   },
   {
     "type": ".end-constant",
+    "named": false
+  },
+  {
+    "type": ".end-main",
+    "named": false
+  },
+  {
+    "type": ".main",
+    "named": false
+  },
+  {
+    "type": "DUP",
     "named": false
   },
   {
