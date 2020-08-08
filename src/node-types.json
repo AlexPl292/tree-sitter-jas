@@ -1,0 +1,67 @@
+[
+  {
+    "type": "constant_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "dec_number",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "constants",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "constant_expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "constants",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": ".constant",
+    "named": false
+  },
+  {
+    "type": ".end-constant",
+    "named": false
+  },
+  {
+    "type": "dec_number",
+    "named": true
+  },
+  {
+    "type": "identifier",
+    "named": true
+  }
+]
