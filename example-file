@@ -1,3 +1,6 @@
 .main
+.var
+myvar
+.end-var
 DUP
 .end-main

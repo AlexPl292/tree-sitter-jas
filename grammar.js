@@ -9,13 +9,18 @@ module.exports = grammar({
 
     main_program: $ => seq(
       '.main',
-      $._statement,
+      optional($.variables),
+      repeat($._statement),
       '.end-main'
     ),
 
-    _statement: $ => repeat1(
-      $.single_statement
+    variables: $ => seq(
+      '.var',
+      repeat($.identifier),
+      '.end-var'
     ),
+
+    _statement: $ => $.single_statement,
 
     single_statement: $ => choice(
       'DUP'

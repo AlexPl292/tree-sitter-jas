@@ -8,7 +8,24 @@ DUP
 
 ---
 (source_file
-    (constants
-        (constant_expression
-            (identifier)
-            (dec_number))))
+    (main_program
+        (single_statement)))
+
+
+================
+Main program with variables
+================
+
+.main
+.var
+myvar
+.end-var
+DUP
+.end-main
+
+---
+(source_file
+    (main_program
+        (variables
+            (identifier))
+            (single_statement)))

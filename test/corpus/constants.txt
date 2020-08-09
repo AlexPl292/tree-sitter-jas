@@ -5,13 +5,16 @@ One constant
 .constant
 one 1
 .end-constant
+.main
+.end-main
 
 ---
 (source_file
     (constants
         (constant_expression
             (identifier)
-            (dec_number))))
+            (dec_number)))
+    (main_program))
 
 
 ================
@@ -22,6 +25,8 @@ Two constants
 one 1
 two 2
 .end-constant
+.main
+.end-main
 
 ---
 (source_file
@@ -31,7 +36,8 @@ two 2
             (dec_number))
         (constant_expression
             (identifier)
-            (dec_number))))
+            (dec_number)))
+    (main_program))
 
             
 ================
@@ -44,6 +50,8 @@ two 2
 three 3
 four 4
 .end-constant
+.main
+.end-main
 
 ---
 (source_file
@@ -59,7 +67,8 @@ four 4
             (dec_number))
         (constant_expression
             (identifier)
-            (dec_number))))
+            (dec_number)))
+    (main_program))
 
             
 ================
@@ -69,13 +78,16 @@ Hex constant
 .constant
 one 0x01
 .end-constant
+.main
+.end-main
 
 ---
 (source_file
     (constants
         (constant_expression
             (identifier)
-            (hex_number))))
+            (hex_number)))
+    (main_program))
 
 
 ================
@@ -85,10 +97,13 @@ Oct constant
 .constant
 one 01
 .end-constant
+.main
+.end-main
 
 ---
 (source_file
     (constants
         (constant_expression
             (identifier)
-            (oct_number))))
+            (oct_number)))
+    (main_program))

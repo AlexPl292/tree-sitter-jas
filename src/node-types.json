@@ -47,10 +47,14 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
         {
           "type": "single_statement",
+          "named": true
+        },
+        {
+          "type": "variables",
           "named": true
         }
       ]
@@ -81,6 +85,21 @@
     }
   },
   {
+    "type": "variables",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": ".constant",
     "named": false
   },
@@ -93,7 +112,15 @@
     "named": false
   },
   {
+    "type": ".end-var",
+    "named": false
+  },
+  {
     "type": ".main",
+    "named": false
+  },
+  {
+    "type": ".var",
     "named": false
   },
   {
