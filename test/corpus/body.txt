@@ -25,9 +25,9 @@ ILOAD 0x01
         (command)
         (hex_number)))
 
-===============================
-Program with command with label
-===============================
+===========================================
+Program with command with label as argument
+===========================================
 
 .main
 ILOAD mylabel
@@ -52,3 +52,37 @@ Program with numbers
     (main_program
         (hex_number)
         (oct_number)))
+
+==================
+Program with label
+==================
+
+.main
+label: DUP
+.end-main
+
+---
+(source_file
+    (main_program
+        (label (identifier))
+        (command)))
+
+==============================
+Program with label on new line
+==============================
+
+.main
+label:
+    DUP
+other:
+    ILOAD total
+.end-main
+
+---
+(source_file
+    (main_program
+        (label (identifier))
+        (command)
+        (label (identifier))
+        (command)
+        (identifier)))

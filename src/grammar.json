@@ -181,6 +181,10 @@
         {
           "type": "SYMBOL",
           "name": "identifier"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "label"
         }
       ]
     },
@@ -266,6 +270,19 @@
         {
           "type": "STRING",
           "value": "LDC_W"
+        }
+      ]
+    },
+    "label": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "identifier"
+        },
+        {
+          "type": "STRING",
+          "value": ":"
         }
       ]
     },

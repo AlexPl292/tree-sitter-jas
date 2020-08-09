@@ -39,7 +39,8 @@ module.exports = grammar({
     _statement: $ => choice(
       $.command,
       $._number,
-      $.identifier
+      $.identifier,
+      $.label
     ),
 
     command: $ => choice(
@@ -63,6 +64,11 @@ module.exports = grammar({
       'INVOKEVIRTUAL',
       'ISTORE',
       'LDC_W',
+    ),
+
+    label: $ => seq(
+      $.identifier,
+      ':'
     ),
 
     constants: $ => seq(
