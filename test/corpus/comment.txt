@@ -1,0 +1,35 @@
+================
+Single comment
+================
+
+.main
+DUP // Comment
+.end-main
+
+---
+(source_file
+    (main_program
+        (command)
+        (comment)))
+
+=================
+Multiple comments
+=================
+
+// Comment
+.main // Comment
+DUP // Comment
+// Comment
+.end-main // Comment
+// Comment
+
+---
+(source_file
+    (comment)
+    (main_program
+        (comment)
+        (command)
+        (comment)
+        (comment))
+    (comment)
+    (comment))

@@ -1,3 +1,6 @@
-.main
-mylabel: ILOAD 0x01
-.end-main
+// Comment
+.main // Comment
+DUP // Comment
+// Comment
+.end-main // Comment
+// Comment
