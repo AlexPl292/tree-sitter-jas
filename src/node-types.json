@@ -1,5 +1,10 @@
 [
   {
+    "type": "command",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "constant_expression",
     "named": true,
     "fields": {},
@@ -50,7 +55,23 @@
       "required": false,
       "types": [
         {
-          "type": "single_statement",
+          "type": "command",
+          "named": true
+        },
+        {
+          "type": "dec_number",
+          "named": true
+        },
+        {
+          "type": "hex_number",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "oct_number",
           "named": true
         },
         {
@@ -69,15 +90,27 @@
       "required": true,
       "types": [
         {
+          "type": "command",
+          "named": true
+        },
+        {
+          "type": "dec_number",
+          "named": true
+        },
+        {
+          "type": "hex_number",
+          "named": true
+        },
+        {
           "type": "identifier",
           "named": true
         },
         {
-          "type": "parameters",
+          "type": "oct_number",
           "named": true
         },
         {
-          "type": "single_statement",
+          "type": "parameters",
           "named": true
         },
         {
@@ -101,11 +134,6 @@
         }
       ]
     }
-  },
-  {
-    "type": "single_statement",
-    "named": true,
-    "fields": {}
   },
   {
     "type": "source_file",
@@ -190,7 +218,83 @@
     "named": false
   },
   {
+    "type": "BIPUSH",
+    "named": false
+  },
+  {
     "type": "DUP",
+    "named": false
+  },
+  {
+    "type": "GOTO",
+    "named": false
+  },
+  {
+    "type": "IADD",
+    "named": false
+  },
+  {
+    "type": "IAND",
+    "named": false
+  },
+  {
+    "type": "IFEQ",
+    "named": false
+  },
+  {
+    "type": "IFLT",
+    "named": false
+  },
+  {
+    "type": "IF_ICMPEQ",
+    "named": false
+  },
+  {
+    "type": "IINC",
+    "named": false
+  },
+  {
+    "type": "ILOAD",
+    "named": false
+  },
+  {
+    "type": "INVOKEVIRTUAL",
+    "named": false
+  },
+  {
+    "type": "IOR",
+    "named": false
+  },
+  {
+    "type": "IRETURN",
+    "named": false
+  },
+  {
+    "type": "ISTORE",
+    "named": false
+  },
+  {
+    "type": "ISUB",
+    "named": false
+  },
+  {
+    "type": "LDC_W",
+    "named": false
+  },
+  {
+    "type": "NOP",
+    "named": false
+  },
+  {
+    "type": "POP",
+    "named": false
+  },
+  {
+    "type": "SWAP",
+    "named": false
+  },
+  {
+    "type": "WIDE",
     "named": false
   },
   {

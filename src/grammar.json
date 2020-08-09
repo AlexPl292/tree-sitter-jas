@@ -172,16 +172,100 @@
       "members": [
         {
           "type": "SYMBOL",
-          "name": "single_statement"
+          "name": "command"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_number"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "identifier"
         }
       ]
     },
-    "single_statement": {
+    "command": {
       "type": "CHOICE",
       "members": [
         {
           "type": "STRING",
           "value": "DUP"
+        },
+        {
+          "type": "STRING",
+          "value": "IADD"
+        },
+        {
+          "type": "STRING",
+          "value": "IAND"
+        },
+        {
+          "type": "STRING",
+          "value": "IOR"
+        },
+        {
+          "type": "STRING",
+          "value": "IRETURN"
+        },
+        {
+          "type": "STRING",
+          "value": "ISUB"
+        },
+        {
+          "type": "STRING",
+          "value": "NOP"
+        },
+        {
+          "type": "STRING",
+          "value": "POP"
+        },
+        {
+          "type": "STRING",
+          "value": "SWAP"
+        },
+        {
+          "type": "STRING",
+          "value": "WIDE"
+        },
+        {
+          "type": "STRING",
+          "value": "BIPUSH"
+        },
+        {
+          "type": "STRING",
+          "value": "GOTO"
+        },
+        {
+          "type": "STRING",
+          "value": "IFEQ"
+        },
+        {
+          "type": "STRING",
+          "value": "IFLT"
+        },
+        {
+          "type": "STRING",
+          "value": "IF_ICMPEQ"
+        },
+        {
+          "type": "STRING",
+          "value": "IINC"
+        },
+        {
+          "type": "STRING",
+          "value": "ILOAD"
+        },
+        {
+          "type": "STRING",
+          "value": "INVOKEVIRTUAL"
+        },
+        {
+          "type": "STRING",
+          "value": "ISTORE"
+        },
+        {
+          "type": "STRING",
+          "value": "LDC_W"
         }
       ]
     },

@@ -48,7 +48,7 @@ DUP
         (identifier)
         (parameters
             (identifier))
-        (single_statement)))
+        (command)))
 
 ===========================================
 Method with parameters, variables, and body
@@ -72,4 +72,4 @@ DUP
             (identifier))
         (variables
             (identifier))
-        (single_statement)))
+        (command)))

@@ -9,7 +9,7 @@ DUP
 ---
 (source_file
     (main_program
-        (single_statement)))
+        (command)))
 
 
 ================
@@ -28,4 +28,4 @@ DUP
     (main_program
         (variables
             (identifier))
-            (single_statement)))
+        (command)))

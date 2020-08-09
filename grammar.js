@@ -36,10 +36,33 @@ module.exports = grammar({
       '.end-var'
     ),
 
-    _statement: $ => choice($.single_statement),
+    _statement: $ => choice(
+      $.command,
+      $._number,
+      $.identifier
+    ),
 
-    single_statement: $ => choice(
-      'DUP'
+    command: $ => choice(
+      'DUP',
+      'IADD',
+      'IAND',
+      'IOR',
+      'IRETURN',
+      'ISUB',
+      'NOP',
+      'POP',
+      'SWAP',
+      'WIDE',
+      'BIPUSH',
+      'GOTO',
+      'IFEQ',
+      'IFLT',
+      'IF_ICMPEQ',
+      'IINC',
+      'ILOAD',
+      'INVOKEVIRTUAL',
+      'ISTORE',
+      'LDC_W',
     ),
 
     constants: $ => seq(

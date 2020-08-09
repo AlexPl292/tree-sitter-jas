@@ -1,0 +1,54 @@
+================
+Simple program
+================
+
+.main
+DUP
+.end-main
+
+---
+(source_file
+    (main_program
+        (command)))
+
+==================================
+Program with command with argument
+==================================
+
+.main
+ILOAD 0x01
+.end-main
+
+---
+(source_file
+    (main_program
+        (command)
+        (hex_number)))
+
+===============================
+Program with command with label
+===============================
+
+.main
+ILOAD mylabel
+.end-main
+
+---
+(source_file
+    (main_program
+        (command)
+        (identifier)))
+
+====================
+Program with numbers
+====================
+
+.main
+0x01 032
+.end-main
+
+---
+(source_file
+    (main_program
+        (hex_number)
+        (oct_number)))

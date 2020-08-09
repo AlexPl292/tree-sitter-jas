@@ -1,5 +1,3 @@
 .main
+ILOAD 0x01
 .end-main
-.method mymethod()
-DUP
-.end-method
