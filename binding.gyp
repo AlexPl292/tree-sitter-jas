@@ -1,7 +1,7 @@
 {
   "targets": [
     {
-      "target_name": "tree_sitter_IJVM_binding",
+      "target_name": "tree_sitter_jas_binding",
       "include_dirs": [
         "<!(node -e \"require('nan')\")",
         "src"
