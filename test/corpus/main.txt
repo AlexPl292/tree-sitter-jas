@@ -11,6 +11,23 @@ DUP
     (main_program
         (command)))
 
+====================================
+Main program with command with label
+====================================
+
+.main
+ILOAD max_value
+ILOAD min-value
+.end-main
+
+---
+(source_file
+    (main_program
+        (command)
+        (identifier)
+        (command)
+        (identifier)))
+
 
 ================
 Main program with variables

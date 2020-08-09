@@ -86,7 +86,7 @@ module.exports = grammar({
       $.identifier, $._number
     ),
 
-    identifier: $ => /[a-z]+/,
+    identifier: $ => /[a-zA-Z-_]+/,
 
     _number: $ => choice(
       $.dec_number,

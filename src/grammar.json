@@ -188,22 +188,6 @@
         }
       ]
     },
-    "comment": {
-      "type": "TOKEN",
-      "content": {
-        "type": "SEQ",
-        "members": [
-          {
-            "type": "STRING",
-            "value": "//"
-          },
-          {
-            "type": "PATTERN",
-            "value": "(\\\\(.|\\r?\\n)|[^\\\\\\n])*"
-          }
-        ]
-      }
-    },
     "command": {
       "type": "CHOICE",
       "members": [
@@ -337,7 +321,7 @@
     },
     "identifier": {
       "type": "PATTERN",
-      "value": "[a-z]+"
+      "value": "[a-zA-Z-_]+"
     },
     "_number": {
       "type": "CHOICE",
@@ -367,6 +351,22 @@
     "dec_number": {
       "type": "PATTERN",
       "value": "\\d+"
+    },
+    "comment": {
+      "type": "TOKEN",
+      "content": {
+        "type": "SEQ",
+        "members": [
+          {
+            "type": "STRING",
+            "value": "//"
+          },
+          {
+            "type": "PATTERN",
+            "value": "(\\\\(.|\\r?\\n)|[^\\\\\\n])*"
+          }
+        ]
+      }
     }
   },
   "extras": [
