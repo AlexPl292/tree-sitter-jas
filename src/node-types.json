@@ -61,6 +61,48 @@
     }
   },
   {
+    "type": "method",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "parameters",
+          "named": true
+        },
+        {
+          "type": "single_statement",
+          "named": true
+        },
+        {
+          "type": "variables",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "parameters",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "single_statement",
     "named": true,
     "fields": {}
@@ -79,6 +121,10 @@
         },
         {
           "type": "main_program",
+          "named": true
+        },
+        {
+          "type": "method",
           "named": true
         }
       ]
@@ -100,6 +146,18 @@
     }
   },
   {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
     "type": ".constant",
     "named": false
   },
@@ -112,11 +170,19 @@
     "named": false
   },
   {
+    "type": ".end-method",
+    "named": false
+  },
+  {
     "type": ".end-var",
     "named": false
   },
   {
     "type": ".main",
+    "named": false
+  },
+  {
+    "type": ".method",
     "named": false
   },
   {

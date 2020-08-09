@@ -1,6 +1,5 @@
 .main
-.var
-myvar
-.end-var
-DUP
 .end-main
+.method mymethod()
+DUP
+.end-method

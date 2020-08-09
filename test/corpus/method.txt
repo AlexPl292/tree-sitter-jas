@@ -1,0 +1,75 @@
+================
+Simple program
+================
+
+.main
+.end-main
+.method mymethod()
+.end-method
+
+---
+(source_file
+    (main_program)
+    (method
+        (identifier)
+        (parameters)))
+
+======================
+Method with parameters
+======================
+
+.main
+.end-main
+.method mymethod(myparameter)
+.end-method
+
+---
+(source_file
+    (main_program)
+    (method
+        (identifier)
+        (parameters
+            (identifier))))
+
+===============================
+Method with parameters and body
+===============================
+
+.main
+.end-main
+.method mymethod(myparameter)
+DUP
+.end-method
+
+---
+(source_file
+    (main_program)
+    (method
+        (identifier)
+        (parameters
+            (identifier))
+        (single_statement)))
+
+===========================================
+Method with parameters, variables, and body
+===========================================
+
+.main
+.end-main
+.method mymethod(myparameter)
+.var
+myvar
+.end-var
+DUP
+.end-method
+
+---
+(source_file
+    (main_program)
+    (method
+        (identifier)
+        (parameters
+            (identifier))
+        (variables
+            (identifier))
+        (single_statement)))
